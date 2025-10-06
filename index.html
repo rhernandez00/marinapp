@@ -1,31 +1,41 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Juego de Fonemas y Grafemas</title>
-    <link rel="stylesheet" href="css/estilos.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>GatoLetras — Sílabas (Construye la palabra)</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <div id="app" class="app">
+    <img src="assets/fondo.svg" alt="" class="fondo" aria-hidden="true"/>
+    <header class="barra">
+      <div class="marca">🐾 GatoLetras</div>
+      <div class="controles">
+        <button id="btn-voz" class="btn" aria-pressed="true" title="Activar/desactivar voz">Voz</button>
+        <button id="btn-sonidos" class="btn" aria-pressed="true" title="Activar/desactivar efectos">Sonidos</button>
+        <button id="btn-musica" class="btn" aria-pressed="true" title="Activar/desactivar música">Música</button>
+        <button id="btn-siguiente" class="btn principal" title="Siguiente palabra">Siguiente ▶</button>
+      </div>
+    </header>
 
-    <div id="juego-container">
-        <header>
-            <h1 id="instruccion"></h1>
-        </header>
-        
-        <main>
-            <div id="cartas-container">
-                </div>
-        </main>
-        
-        <footer>
-            <div id="feedback-container">
-                <img id="feedback-imagen" src="media/imagenes/refuerzo.png" alt="Imagen de refuerzo">
-                <p id="feedback-texto"></p>
-            </div>
-        </footer>
-    </div>
+    <main class="escena" role="main" aria-live="polite">
+      <section class="zona-palabra">
+        <div class="marco-imagen" aria-hidden="true">
+          <img id="gato-narrador" src="assets/gato_narrador.svg" alt="Gato narrador amistoso" class="gato"/>
+        </div>
+        <div class="burbuja" id="burbuja" role="status">¡Hola! Soy Mishi. Vamos a ar-mar una pa-la-bra.</div>
+        <div class="objetivo" id="objetivo"></div>
+        <div class="texto-objetivo" id="texto-objetivo" aria-label="Palabra objetivo oculta"></div>
+      </section>
+      <section class="banco" id="banco" aria-label="Banco de sílabas para arrastrar"></section>
+    </main>
 
-    <script src="js/juego.js"></script>
+    <footer class="pie">
+      <small>Español (México). Diseñado para niñas y niños de 5 años. — Prototipo educativo.</small>
+    </footer>
+  </div>
+
+  <script src="app.js"></script>
 </body>
 </html>

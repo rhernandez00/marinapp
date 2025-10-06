@@ -1,0 +1,160 @@
+{
+  "config": {
+    "dialecto": "seseo",
+    "voz_preferida": "es-MX",
+    "volumen_voz": 1.0,
+    "musica_activa_por_defecto": true,
+    "sonidos_activos_por_defecto": true,
+    "dificultad": {
+      "min_distractores": 2,
+      "max_distractores": 6,
+      "aumento_por_racha": 1,
+      "reduccion_por_error": 1
+    }
+  },
+  "etapas": [
+    {
+      "id": "etapa2",
+      "nombre": "Vocales + m, p, s, l",
+      "gpcs": [
+        "a",
+        "e",
+        "i",
+        "o",
+        "u",
+        "m",
+        "p",
+        "s",
+        "l"
+      ],
+      "palabras": [
+        {
+          "texto": "mapa",
+          "silabas": [
+            "ma",
+            "pa"
+          ]
+        },
+        {
+          "texto": "sapo",
+          "silabas": [
+            "sa",
+            "po"
+          ]
+        },
+        {
+          "texto": "pipa",
+          "silabas": [
+            "pi",
+            "pa"
+          ]
+        },
+        {
+          "texto": "masa",
+          "silabas": [
+            "ma",
+            "sa"
+          ]
+        },
+        {
+          "texto": "puma",
+          "silabas": [
+            "pu",
+            "ma"
+          ]
+        },
+        {
+          "texto": "loma",
+          "silabas": [
+            "lo",
+            "ma"
+          ]
+        },
+        {
+          "texto": "lupa",
+          "silabas": [
+            "lu",
+            "pa"
+          ]
+        },
+        {
+          "texto": "palo",
+          "silabas": [
+            "pa",
+            "lo"
+          ]
+        },
+        {
+          "texto": "pesa",
+          "silabas": [
+            "pe",
+            "sa"
+          ]
+        },
+        {
+          "texto": "piso",
+          "silabas": [
+            "pi",
+            "so"
+          ]
+        },
+        {
+          "texto": "sala",
+          "silabas": [
+            "sa",
+            "la"
+          ]
+        },
+        {
+          "texto": "sopa",
+          "silabas": [
+            "so",
+            "pa"
+          ]
+        },
+        {
+          "texto": "mimo",
+          "silabas": [
+            "mi",
+            "mo"
+          ]
+        },
+        {
+          "texto": "mama",
+          "silabas": [
+            "ma",
+            "ma"
+          ]
+        },
+        {
+          "texto": "lila",
+          "silabas": [
+            "li",
+            "la"
+          ]
+        }
+      ],
+      "distractores": [
+        "me",
+        "mi",
+        "mo",
+        "mu",
+        "la",
+        "le",
+        "li",
+        "lo",
+        "lu",
+        "pa",
+        "pe",
+        "pi",
+        "po",
+        "pu",
+        "sa",
+        "se",
+        "si",
+        "so",
+        "su"
+      ]
+    }
+  ]
+}

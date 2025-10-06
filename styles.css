@@ -1,0 +1,25 @@
+
+:root{ --negro:#111; --crema:#FFF8E7; --rosa:#F8BFB3; --acento:#FF6F61; --amarillo:#FFD54F; --verde:#8BC34A; --azul:#64B5F6;
+  --sombra: 0 6px 18px rgba(0,0,0,0.15); --radio: 18px; --fuente: system-ui, -apple-system, "Segoe UI", Roboto, "Noto Sans", "Helvetica Neue", Arial; }
+*{ box-sizing:border-box } html,body{height:100%;margin:0} body{font-family:var(--fuente);background:#E1F5FE;color:var(--negro)}
+.app{position:relative;min-height:100%;overflow:hidden} .fondo{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-1}
+.barra{display:flex;align-items:center;justify-content:space-between;padding:10px 12px;background:var(--crema);border-bottom:3px solid #ddd}
+.marca{font-weight:800;letter-spacing:.5px} .controles{display:flex;gap:10px}
+.btn{background:white;border:3px solid var(--negro);border-radius:var(--radio);padding:10px 14px;font-weight:700;cursor:pointer;box-shadow:var(--sombra)}
+.btn[aria-pressed="false"]{opacity:.6} .btn.principal{background:var(--amarillo)}
+.escena{max-width:1100px;margin:0 auto;padding:20px}
+.zona-palabra{display:grid;grid-template-columns:300px 1fr;gap:16px;align-items:start}
+.marco-imagen{display:flex;align-items:center;justify-content:center;background:var(--crema);border:3px solid var(--negro);border-radius:var(--radio);padding:10px;box-shadow:var(--sombra)}
+.gato{width:100%;height:auto;max-width:280px}
+.burbuja{grid-column:1 / span 2;background:white;border:3px solid var(--negro);border-radius:var(--radio);padding:14px;font-size:clamp(16px,2.2vw,22px);box-shadow:var(--sombra)}
+.objetivo{grid-column:1 / span 2;display:flex;align-items:center;justify-content:center;gap:14px;min-height:160px;padding:14px;background:var(--crema);border:3px dashed var(--negro);border-radius:var(--radio)}
+.slot{width:240px;height:160px;background:url('assets/huella_tile.svg');background-size:cover;position:relative;border-radius:24px;display:flex;align-items:center;justify-content:center;filter:drop-shadow(0 8px 0 rgba(0,0,0,.1))}
+.slot .silaba-texto{font-size:64px;font-weight:900;user-select:none}
+.texto-objetivo{text-align:center;font-size:22px;font-weight:700;opacity:.25;letter-spacing:2px}
+.banco{margin-top:18px;display:flex;flex-wrap:wrap;gap:14px;justify-content:center}
+.ficha{width:220px;height:140px;background:url('assets/huella_tile.svg');background-size:cover;display:flex;align-items:center;justify-content:center;border-radius:24px;cursor:grab;touch-action:none;user-select:none;position:relative;border:3px solid var(--negro);transition:transform .1s ease}
+.ficha:active{cursor:grabbing;transform:scale(1.03)}
+.ficha .silaba-texto{font-size:58px;font-weight:900}
+.pie{text-align:center;padding:16px;color:#333}
+.ficha:focus-visible,.btn:focus-visible,.slot:focus-visible{outline:5px solid var(--azul);outline-offset:4px}
+.estrella{position:absolute;width:40px;height:40px;pointer-events:none}

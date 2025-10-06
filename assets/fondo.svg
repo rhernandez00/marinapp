@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720">
+  <defs>
+    <linearGradient id="cielo" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0%" stop-color="#B3E5FC"/>
+      <stop offset="100%" stop-color="#E1F5FE"/>
+    </linearGradient>
+  </defs>
+  <rect x="0" y="0" width="1280" height="720" fill="url(#cielo)"/>
+  <rect x="0" y="520" width="1280" height="200" fill="#C8E6C9"/>
+  <g fill="#FFFFFF" opacity="0.9">
+    <ellipse cx="200" cy="150" rx="90" ry="40"/>
+    <ellipse cx="250" cy="150" rx="70" ry="30"/>
+    <ellipse cx="220" cy="130" rx="50" ry="25"/>
+    <ellipse cx="900" cy="120" rx="80" ry="35"/>
+    <ellipse cx="950" cy="130" rx="60" ry="28"/>
+    <ellipse cx="920" cy="110" rx="40" ry="20"/>
+  </g>
+</svg>
